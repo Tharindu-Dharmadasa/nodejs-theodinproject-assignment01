@@ -18,9 +18,9 @@ function serverPage(res, fileName) {
 const server = http.createServer((req, res) => {
   if (req.url === "/" || req.url === "/index.html") {
     serverPage(res, "index.html");
-  } else if (req.url === "/about.html") {
+  } else if (req.url === "/about") {
     serverPage(res, "about.html");
-  } else if (req.url === "/contact.html") {
+  } else if (req.url === "/contact") {
     serverPage(res, "contact.html");
   } else {
     serverPage(res, "not-found.html");
